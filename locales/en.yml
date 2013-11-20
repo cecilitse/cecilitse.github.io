@@ -12,12 +12,16 @@ en:
       description_html: |
         <p>
           I'm a <strong>Ruby on Rails developer</strong> who loves to work with
-          Agile methods such as <strong>Kanban</strong> and <strong>Pomodoro
-          Technique</strong>.
+          Agile methods such as
+          <a href="http://en.wikipedia.org/wiki/Kanban_board">
+          <strong>Kanban</strong></a> and
+          <a href="http://pomodorotechnique.com/">
+          <strong>Pomodoro Technique</strong></a>.
         </p>
         <p>
           I feel comfortable when coding with <strong>style guides</strong>,
-          <strong>git flow</strong>, <strong>code reviews</strong>,
+          <a href="http://nvie.com/posts/a-successful-git-branching-model/">
+          <strong>git flow</strong></a>, <strong>code reviews</strong>,
           my <em>dvorak keyboard</em> and a <em>cup of tea</em>.
         </p>
         <p>

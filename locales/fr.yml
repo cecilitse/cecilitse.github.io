@@ -1,0 +1,39 @@
+---
+fr:
+  credits:
+    photos:
+      by: de
+      summary: "Crédits photos :"
+  me:
+    contact: Contactez-moi
+    social:
+      follow_me: Suivez moi
+    summary:
+      description_html: |
+        <p>
+          Développeur web avec 5 ans d'expérience en <strong>Ruby on Rails</strong>
+          et une expertise <strong>e-commerce</strong>,
+          je suis disponible pour toute mission.
+        </p>
+        <p>
+          Très intéressée par les <strong>méthodes agiles</strong>, je ne sors
+          jamais sans mon <strong>Kanban</strong> ainsi que mes
+          <strong>Pomodoros</strong>.
+        </p>
+        <p>
+          Je suis dans mon élement avec des <strong>conventions de code</strong>,
+          un <strong>git flow</strong>, des <strong>revues de code</strong>
+          et une <em>tasse de thé</em>.
+        </p>
+        <p>
+          Lorsque je ne suis pas derrière mon écran, rejoignez-moi pour une
+          petite bière ou une rando vélo autour de
+          <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+            <span itemprop="locality">Lille</span>.
+          </span>
+        </p>
+      job: Freelance Ruby on Rails
+      name: Cécile Veneziani
+  page:
+    meta_description: "Développeur Ruby on Rails Freelance, je suis disponible à Lille ou en télétravail pour des missions Ruby on Rails, Backbone, Elasticsearch, AWS, etc."
+    title: 'Développeur Ruby on Rails - Cecile Veneziani'

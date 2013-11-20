@@ -1,0 +1,42 @@
+@include sticky-footer(36px, "#root", "#root_footer", "#footer")
+
+.l-container
+  @include background-image-retina("background", "jpg", 100%, 100%)
+  +background-size(cover)
+
+.l-content
+  min-height: 600px
+  padding-top: 20px
+
+.l-credits
+  color: $white
+
+.l-credits--photos
+  margin-top: 10px
+  padding-right: 10px
+
+.l-credits--photo
+  color: $white
+  &:hover,
+  &:visited
+    color: $white
+
+.l-footer
+  @include background-image-retina("background_dark_noise", "png", 64px, 64px)
+  +background-size(cover)
+  min-width: 100%
+
+.l-langs
+  margin-top: 20px
+
+.l-langs--link
+  +opacity(0.5)
+  color: $light-grey
+  font-weight: bold
+  margin: 0 5px 0 5px
+  padding-bottom: 4px
+  padding-top: 4px
+  text-transform: uppercase
+
+.l-langs--link-active
+  +opacity(0.3)

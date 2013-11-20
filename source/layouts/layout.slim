@@ -1,16 +1,21 @@
 doctype html
-html
+html lang="#{I18n.locale}"
   head
+    title == t('page.title')
     meta charset="utf-8"
-
-    /! Always force latest IE rendering engine or request Chrome Frame
-    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
-
-    /! Use title if it's in the page YAML frontmatter
-    title == data.page.title || "The Middleman"
-
-    == stylesheet_link_tag "normalize", "all"
-    == javascript_include_tag  "all"
+    meta content='width=device-width, initial-scale=1.0' name='viewport'
+    meta content="#{t('page.meta_description')}" name="description"
+    = head_lang_links
+    == favicon_tag            'favicon.ico'
+    == stylesheet_link_tag    'all'
+    == javascript_include_tag 'all'
 
   body class="#{page_classes}"
-  == yield
+    div id="root" class="l-container"
+      header
+        = partial 'layouts/header/langs'
+      div class="l-content"
+        == yield
+      div id="root_footer" class="l-container--footer"
+    footer class="l-footer" id="footer"
+      = partial 'layouts/footer/credits'

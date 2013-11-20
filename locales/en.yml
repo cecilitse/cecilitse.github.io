@@ -1,0 +1,34 @@
+---
+en:
+  credits:
+    photos:
+      by: by
+      summary: "Photos credits:"
+  me:
+    contact: Hire me
+    social:
+      follow_me: Follow me
+    summary:
+      description_html: |
+        <p>
+          I'm a <strong>Ruby on Rails developer</strong> who loves to work with
+          Agile methods such as <strong>Kanban</strong> and <strong>Pomodoro
+          Technique</strong>.
+        </p>
+        <p>
+          I feel comfortable when coding with <strong>style guides</strong>,
+          <strong>git flow</strong>, <strong>code reviews</strong>,
+          my <em>dvorak keyboard</em> and a <em>cup of tea</em>.
+        </p>
+        <p>
+          When I'm not coding, join me for a beer or a bike ride around
+          <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+            <span itemprop="locality">Lille</span>
+            (<span itemprop="country-name">France</span>).
+          </span>
+        </p>
+      job: Ruby on Rails Freelance
+      name: Cecile Veneziani
+  page:
+    meta_description: "I'm a Freelance available to work on Ruby on Rails, Backbone, Elasticsearch, AWS and so on. Based in North of France I also work remotely."
+    title: 'Ruby on Rails Developer - Cecile Veneziani'

@@ -11,11 +11,11 @@ html lang="#{I18n.locale}"
     == javascript_include_tag 'all'
 
   body class="#{page_classes}"
-    div id="root" class="l-container"
+    div class="l-container"
       header
         = partial 'layouts/header/langs'
       div class="l-content"
         == yield
-      div id="root_footer" class="l-container--footer"
-    footer class="l-footer" id="footer"
+      div class="l-container--footer"
+    footer class="l-footer"
       = partial 'layouts/footer/credits'

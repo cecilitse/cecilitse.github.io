@@ -1,5 +1,17 @@
 @include sticky-footer(36px, ".l-container", ".l-container--footer", ".l-footer")
 
+.l-button
+  background-color: $grey
+  border-color: $grey
+  box-shadow: none
+  color: $light-grey
+  text-transform: uppercase
+  &:hover,
+  &:focus
+    background-color: $light-grey
+    border-color: $dark-grey
+    color: $grey
+
 .l-container
   @include background-image-retina("background", "jpg", 100%, 100%)
   +background-size(cover)
@@ -47,3 +59,8 @@
 
 .l-langs--link-active
   +opacity(0.3)
+
+.l-panel
+  +border-radius(10px)
+  background-color: $ghost-white
+  background-color: $ghost-white-transparent

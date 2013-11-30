@@ -1,6 +1,6 @@
 div class="row"
   div class="small-12 large-6 columns"
-    div class="panel me" itemscope="" itemtype="http://data-vocabulary.org/Person"
+    div class="panel l-panel" itemscope="" itemtype="http://data-vocabulary.org/Person"
       div class="row"
         div class="small-12 large-4 columns me-avatar"
           = image_tag "avatar.png", width: "125", height: "125", itemprop: "photo"
@@ -22,5 +22,5 @@ div class="row"
                 = link_to "https://twitter.com/cecilitse", class: "me-social--link" do
                   i class="fi-social-twitter"
           div class="me-contact right"
-            = link_to "#", id: "j-me-contact", class: "me-contact--button button tiny" do
+            = link_to "#", id: "j-me-contact", class: "l-button button tiny" do
               = t('me.contact')

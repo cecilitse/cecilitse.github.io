@@ -6,7 +6,7 @@ doctype html
 html lang="en"
   head
     title
-      'The page you were looking for doesn't exist (404)
+      = data.page_not_found.page.title
     meta charset="utf-8"
     meta content='width=device-width, initial-scale=1.0' name='viewport'
     == favicon_tag            'favicon.ico'
@@ -21,22 +21,12 @@ html lang="en"
             div class="row"
               div class="large-8 columns"
                 h1
-                  '[404] WHOOPS!
-                h2
-                  small
-                    'Looks like you're lost!
-                p class="p-404--description"
-                  'Wait... How did you get there? There's only one page DUDE!
-                  br
-                  'Can't wait to work with YOU smart wonderer.
-                = link_to 'Head back to the homepage', '/', class: 'l-button button tiny'
-
-                h2
-                  small
-                    'Etes-vous perdu ?
-                p class="p-404--description"
-                  'La page que vous recherchez n'existe pas.
-                  br
-                  'N'attendez plus, travaillons ensemble !
-                = link_to "Retourner à la page d'accueil", '/fr', class: 'l-button button tiny'
+                  = data.page_not_found.title
+                - langs.each do |lang|
+                  h2
+                    small
+                      = data.page_not_found[lang]['summary']
+                  p class="p-404--description"
+                    = data.page_not_found[lang]['description_html']
+                  = link_to data.page_not_found[lang]['homepage']['button'], data.page_not_found[lang]['homepage']['url'], class: 'l-button button tiny'
               div class="large-4 columns text-center p-404--avatar"

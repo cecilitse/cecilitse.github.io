@@ -4,6 +4,12 @@
   @include background-image-retina("background", "jpg", 100%, 100%)
   +background-size(cover)
 
+  @media only screen and (max-width: 1920px), only screen and (max-height: 1080px)
+    +background-size(auto)
+
+  @media only screen and (min-width: 1920px), only screen and (min-height: 1080px)
+    background-image: image-url("background@2x.jpg")
+
 .l-content
   min-height: 600px
   padding-top: 20px

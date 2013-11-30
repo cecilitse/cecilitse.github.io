@@ -6,6 +6,9 @@ module LangHelpers
   def head_lang_links
     host  = "http://#{data.settings.host}"
     links = []
+
+    links << "<link href=\"#{host}#{lang_url(I18n.locale)}\" rel=\"canonical\">"
+
     langs.each do |lang|
       next if lang == I18n.locale
       links  << "<link href=\"#{host}#{lang_url(lang)}\" hreflang=\"#{lang}\" rel=\"alternate\" />"

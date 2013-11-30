@@ -4,12 +4,11 @@ module LangHelpers
   end
 
   def head_lang_links
+    host  = "http://#{data.settings.host}"
     links = []
     langs.each do |lang|
       next if lang == I18n.locale
-
-      url    = lang_url(lang)
-      links << "<link href=\"#{url}\" hreflang=\"#{lang}\" rel=\"alternate\" />"
+      links  << "<link href=\"#{host}#{lang_url(lang)}\" hreflang=\"#{lang}\" rel=\"alternate\" />"
     end
 
     links.join

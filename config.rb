@@ -3,8 +3,10 @@
 ::Slim::Engine.set_default_options lang: I18n.locale, locals: {}
 
 activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = 'master'
+  deploy.method       = :git
+  deploy.branch       = 'master'
+  deploy.build_before = false # always use --no-clean options
+  deploy.strategy     = :submodule
 end
 
 activate :i18n, langs: [:en, :fr]

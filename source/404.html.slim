@@ -17,7 +17,7 @@ html lang="en"
     div class="l-container"
       div class="row"
         div class="large-12 columns"
-          div class="panel l-panel p-404"
+          div class="l-panel p-404"
             div class="row"
               div class="large-8 columns"
                 h1
@@ -28,5 +28,5 @@ html lang="en"
                       = data.page_not_found[lang]['summary']
                   p class="p-404--description"
                     = data.page_not_found[lang]['description_html']
-                  = link_to data.page_not_found[lang]['homepage']['button'], data.page_not_found[lang]['homepage']['url'], class: 'l-button button tiny'
-              div class="large-4 columns text-center p-404--avatar"
+                  = link_to data.page_not_found[lang]['homepage']['button'], data.page_not_found[lang]['homepage']['url'], class: 'l-button'
+              div class="large-4 columns p-404--avatar"

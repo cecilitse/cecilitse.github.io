@@ -1,16 +1,13 @@
-@include sticky-footer(36px, ".l-container", ".l-container--footer", ".l-footer")
+@include sticky-footer(35px, ".l-container", ".l-container--footer", ".l-footer")
 
 .l-button
-  background-color: $grey
-  border-color: $grey
-  box-shadow: none
-  color: $light-grey
+  @include button
+  @include button-style($bg: $grey)
+  @include button-size($padding: $button-tny)
+
+  &[disabled]
+    @include button-style($bg: $grey, $disabled: true)
   text-transform: uppercase
-  &:hover,
-  &:focus
-    background-color: $light-grey
-    border-color: $dark-grey
-    color: $grey
 
 .l-container
   @include background-image-retina("background", "jpg", 100%, 100%)
@@ -23,13 +20,14 @@
     background-image: image-url("background@2x.jpg")
 
 .l-content
-  min-height: 600px
   padding-top: 20px
 
 .l-credits
   color: $white
 
 .l-credits--photos
+  font-size: 0.65em
+  margin-bottom: 0px
   margin-top: 10px
   padding-right: 10px
 
@@ -53,7 +51,7 @@
   color: $light-grey
   font-weight: bold
   margin: 0 5px 0 5px
-  padding-bottom: 4px
+  padding-bottom: 3px
   padding-top: 4px
   text-transform: uppercase
 
@@ -61,6 +59,7 @@
   +opacity(0.3)
 
 .l-panel
+  @include panel
   +border-radius(10px)
   background-color: $ghost-white
   background-color: $ghost-white-transparent

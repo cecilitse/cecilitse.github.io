@@ -1,12 +1,11 @@
 dis class="row"
   div class="large-12 columns l-credits"
-    small
-      ul class="inline-list right l-credits--photos"
+    ul class="inline-list right l-credits--photos"
+      li
+        = t('credits.photos.summary')
+      - data.credits.photos.each do |photo|
         li
-          = t('credits.photos.summary')
-        - data.credits.photos.each do |photo|
-          li
-            = link_to photo.url, class: "l-credits--photo" do
-              =' photo.name
-              =' t('credits.photos.by')
-              = photo.author
+          = link_to photo.url, class: "l-credits--photo" do
+            =' photo.name
+            =' t('credits.photos.by')
+            = photo.author

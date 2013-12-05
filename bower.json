@@ -1,0 +1,20 @@
+{
+  "name": "cecilitse.github.io",
+  "version": "0.1.0",
+  "homepage": "http://cecilitse.org",
+  "authors": [
+    "Cecile Veneziani <contact@cecilitse.org>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.0.2"
+  }
+}

@@ -2,6 +2,8 @@
 #       https://github.com/middleman/middleman/issues/1077
 ::Slim::Engine.set_default_options lang: I18n.locale, locals: {}
 
+activate :bower
+
 activate :deploy do |deploy|
   deploy.method       = :git
   deploy.branch       = 'master'

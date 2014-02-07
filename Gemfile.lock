@@ -1,7 +1,6 @@
 GIT
-  remote: https://github.com/cveneziani/middleman-deploy.git
-  revision: 23c6b8c1f6623087b12af971b868c835a0377dfe
-  branch: git_submodule_strategy
+  remote: https://github.com/tvaughan/middleman-deploy.git
+  revision: 83c24d7443807695397098148f3f3ed75f43d4de
   specs:
     middleman-deploy (0.1.4)
       middleman-core (>= 3.0.0)
@@ -79,7 +78,7 @@ GEM
     multi_json (1.8.2)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
-    net-ssh (2.7.0)
+    net-ssh (2.8.0)
     ptools (1.2.2)
     rack (1.5.2)
     rack-livereload (0.3.15)

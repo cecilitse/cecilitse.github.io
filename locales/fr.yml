@@ -5,6 +5,8 @@ fr:
       by: de
       summary: "Crédits photos :"
   me:
+    avatar:
+      alt_text: "Cécile Veneziani, développeur Ruby on Rails à Lille"
     contact: Contactez-moi
     social:
       follow_me: Suivez moi

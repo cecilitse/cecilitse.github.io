@@ -3,7 +3,7 @@ div class="row"
     div class="l-panel" itemscope="" itemtype="http://data-vocabulary.org/Person"
       div class="row"
         div class="small-12 large-4 columns me-avatar"
-          = image_tag "avatar.png", width: "125", height: "125", itemprop: "photo"
+          = image_tag "avatar.png", width: "125", height: "125", itemprop: "photo", alt: t('me.avatar.alt_text')
         div class="small-12 large-8 columns me-summary"
           h1 itemprop="name"
             strong= data.me.name

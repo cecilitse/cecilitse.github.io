@@ -1,4 +1,4 @@
-module LangHelpers
+module LangHelper
   def active_lang?(lang)
     lang == I18n.locale
   end

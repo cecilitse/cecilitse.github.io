@@ -22,4 +22,9 @@ set :js_dir,      'javascripts'
 configure :build do
   activate :minify_css
   activate :minify_javascript
+
+  compass_config do |config|
+    config.sass_options = { debug_info:     false }
+    config.sass_options = { line_comments:  false }
+  end
 end

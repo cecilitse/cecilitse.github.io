@@ -2,9 +2,9 @@ div class="row"
   div class="large-12 columns text-right l-langs"
     - langs.each do |lang|
       - if active_lang?(lang)
-        span class="radius secondary label l-langs--link l-langs--link-active"
+        span class="l-langs--link l-langs--link-active"
           = lang
       - else
-        = link_to lang_url(lang) do
-          span class="radius secondary label l-langs--link"
+        a href="#{lang_url(lang)}"
+          span class="l-langs--link"
             = lang

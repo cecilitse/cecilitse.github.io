@@ -1,0 +1,43 @@
+.me-avatar {
+  margin-bottom: 15px;
+}
+
+.me-description {
+  padding-top: 10px;
+
+  a {
+    color: $grey;
+
+    &:focus,
+    &:hover,
+    &:visited {
+      color: $grey;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.me-social--link {
+  color: $grey;
+  font-size: 1.125em;
+  margin: 0 0.5em;
+
+  &:hover,
+  &:focus {
+    color: $grey;
+  }
+}
+
+.me-summary {
+  h1 {
+    font-size: 1.375em;
+  }
+
+  h2 {
+    font-size: 1em;
+    font-weight: normal;
+  }
+}

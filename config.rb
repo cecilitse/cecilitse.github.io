@@ -7,7 +7,7 @@ activate :bower
 activate :deploy do |deploy|
   deploy.method       = :git
   deploy.branch       = 'master'
-  deploy.build_before = false # always use --no-clean options
+  deploy.build_before = true
   deploy.strategy     = :submodule
 end
 

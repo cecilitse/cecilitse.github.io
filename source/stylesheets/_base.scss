@@ -3,8 +3,9 @@
 @import "compass/css3";
 @import "compass/layout.scss";
 
+@import 'custom-settings/foundation';
 @import "foundation-sites";
-@include foundation-everything;
+@include foundation-everything(true);
 
 @import "font-awesome";
 

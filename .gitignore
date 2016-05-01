@@ -1,2 +1,2 @@
-# Ignore Bower Folder
+/.bundle
 /bower_components

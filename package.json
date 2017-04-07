@@ -1,0 +1,9 @@
+{
+  "name": "cecilitse.github.io",
+  "version": "0.1.0",
+  "description": "Yarn package for Cecilitse website",
+  "main": "all.bundle.js",
+  "repository": "git@github.com:cecilitse/cecilitse.github.io.git",
+  "author": "Cecile Veneziani <contact@cecilitse.org>",
+  "license": "CCommons BY-SA"
+}

@@ -18,5 +18,4 @@ div class="row"
             = link_to "https://twitter.com/#{data.site.twitter}", class: "me-social--link" do
               i class="fa fa-twitter"
           div class="me-contact text-right"
-            = link_to "#", id: "j-me-contact", class: "l-button" do
-              = t('me.contact')
+            = mail_to data.site.mail, t('me.contact'), id: "j-me-contact", class: "l-button"

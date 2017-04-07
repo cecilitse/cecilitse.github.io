@@ -8,7 +8,6 @@ set :fonts_dir,   'fonts'
 set :images_dir,  'images'
 set :js_dir,      'javascripts'
 
-# activate :bower
 activate :autoprefixer
 
 activate :deploy do |deploy|

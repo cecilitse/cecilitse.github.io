@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'middleman',                '~> 4.2.0'
 gem 'middleman-autoprefixer',   '~> 2.7.1'
-# gem 'middleman-bower',        '~> 1.0.2'
 gem 'middleman-compass',        '~> 4.0.1'
 gem 'middleman-livereload',     '~> 3.4.6'
 gem 'middleman-minify-html',    '~> 3.4.1'

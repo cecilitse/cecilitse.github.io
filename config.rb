@@ -2,17 +2,25 @@
 #       https://github.com/middleman/middleman/issues/1077
 ::Slim::Engine.set_default_options lang: I18n.locale, locals: {}
 
-activate :bower
+# activate :bower
+activate :autoprefixer
 
 activate :deploy do |deploy|
-  deploy.method       = :git
-  deploy.branch       = 'master'
-  deploy.build_before = true
-  deploy.strategy     = :submodule
+  deploy.deploy_method = :git
+  deploy.branch        = 'master'
+  deploy.build_before  = true
+  deploy.strategy      = :submodule
 end
+
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
+  source: '.tmp/dist',
+  latency: 1
 
 activate :i18n, langs: [:en, :fr]
 activate :livereload
+activate :protect_emails
 
 set :css_dir,     'stylesheets'
 set :fonts_dir,   'fonts'

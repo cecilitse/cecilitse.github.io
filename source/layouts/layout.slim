@@ -6,7 +6,6 @@ html lang="#{I18n.locale}"
 
     link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     == stylesheet_link_tag    'all'
-    == javascript_include_tag 'all'
 
   body class="#{page_classes}"
     div class="l-container"
@@ -17,3 +16,4 @@ html lang="#{I18n.locale}"
       div class="l-container--footer"
     footer class="l-footer"
       = partial 'layouts/footer/credits'
+    == javascript_include_tag "all.bundle"

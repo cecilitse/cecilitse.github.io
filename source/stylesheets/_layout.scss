@@ -67,7 +67,7 @@
 }
 
 .l-langs--link-active {
-  @include button-disabled;
+  cursor: not-allowed;
   @include opacity(0.3);
 }
 

@@ -1,2 +1,4 @@
 /.bundle
-/bower_components
+/.sass-cache/
+/.tmp/dist
+/node_modules

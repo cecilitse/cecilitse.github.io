@@ -4,10 +4,8 @@
 @import "compass/layout.scss";
 
 @import 'custom-settings/foundation';
-@import "foundation-sites";
+@import "foundation-sites/scss/foundation";
 @include foundation-everything(true);
-
-@import "font-awesome";
 
 @import "colors";
 @import "mixins";

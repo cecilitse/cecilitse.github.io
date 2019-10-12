@@ -6,15 +6,14 @@ fr:
       summary: "Crédits photos :"
   me:
     avatar:
-      alt_text: "Cécile Veneziani, développeur Ruby on Rails à Lille"
+      alt_text: "Cécile Veneziani, développeur Ruby on Rails à Nantes"
     contact: Contactez-moi
     social:
       follow_me: Suivez moi
     summary:
       description_html: |
         <p>
-          Développeur web avec plus de 10 ans d'expérience en <strong>Ruby on Rails</strong>
-          et une expertise <strong>e-commerce</strong>,
+          Développeur web avec plus de 10 ans d'expérience en <strong>Ruby on Rails</strong>,
           je suis disponible pour toute mission.
         </p>
         <p>
@@ -35,10 +34,10 @@ fr:
           Lorsque je ne suis pas derrière mon écran, rejoignez-moi pour une
           petite bière ou une rando vélo autour de
           <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-            <span itemprop="locality">Lille</span>.
+            <span itemprop="locality">Nantes</span>.
           </span>
         </p>
       job: Freelance Ruby on Rails
   page:
-    meta_description: "Développeur Ruby on Rails Freelance, je suis disponible à Lille ou en télétravail pour des missions Ruby on Rails, Backbone, Elasticsearch, AWS, etc."
+    meta_description: "Développeur Ruby on Rails Freelance, je suis disponible à Nantes ou en télétravail pour des missions Ruby on Rails, Elasticsearch, etc."
     title: 'Développeur Ruby on Rails'

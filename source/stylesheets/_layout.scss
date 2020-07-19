@@ -8,10 +8,10 @@
 
 .l-container {
   @include background-image-retina("background", "jpg", 100%, 100%);
-  @include background-size(cover);
+  background-size: cover;
 
   @media only screen and (max-width: 1920px), only screen and (max-height: 1080px) {
-    @include background-size(auto);
+    background-size: auto;
   }
 
   @media only screen and (min-width: 1920px), only screen and (min-height: 1080px) {
@@ -46,7 +46,7 @@
 
 .l-footer {
   @include background-image-retina("background_dark_noise", "png", 64px, 64px);
-  @include background-size(cover);
+  background-size: cover;
   min-width: 100%;
 }
 
@@ -56,8 +56,8 @@
 
 .l-langs--link {
   @include button($background: $light-grey, $background-hover: scale-color($light-grey, $lightness: +50%));
-  @include opacity(0.5);
-  @include border-radius(3px);
+  opacity: 0.5;
+  border-radius: 3px;
   color: $grey;
   font-size: map-get($button-sizes, tiny);
   font-weight: bold;
@@ -68,12 +68,12 @@
 
 .l-langs--link-active {
   cursor: not-allowed;
-  @include opacity(0.3);
+  opacity: 0.3;
 }
 
 .l-panel {
   @include callout-base;
-  @include border-radius(10px);
+  border-radius: 10px;
   background-color: $ghost-white;
   background-color: $ghost-white-transparent;
 }

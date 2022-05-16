@@ -1,8 +1,0 @@
-@charset 'utf-8';
-
-@import 'custom-settings/foundation';
-@import "foundation-sites/scss/foundation";
-@include foundation-everything(true);
-
-@import "colors";
-@import "mixins";

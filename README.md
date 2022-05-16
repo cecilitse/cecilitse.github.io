@@ -2,7 +2,7 @@
 
 http://cecilitse.org/
 
-Made with [Foundation](http://foundation.zurb.com/) & [Middleman](http://middlemanapp.com/)
+Made with [Pico.css](https://picocss.com/)
 
 ## License
 
